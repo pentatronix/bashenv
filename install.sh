@@ -15,7 +15,8 @@ git clone https://github.com/nhdaly/tmux-better-mouse-mode ~/.tmux/
 cat bashrc >> ~/.bashrc
 cat tmux >> ~/.tmux.conf
 cat vimrc >> ~/.vimrc
-cat powerline >> ~/.config/powerline
+mkdir ~/.config/powerline
+cat powerline >> ~/.config/powerline/default.json
 vim -c PluginInstall
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer --tern-completer
