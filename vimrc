@@ -61,6 +61,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " For code completion have the following installed: 
 " sudo apt-get install python-dev python3-dev
 " sudo apt-get install build-essentials cmake

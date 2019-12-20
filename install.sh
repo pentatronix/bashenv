@@ -6,7 +6,7 @@ echo   .tmux
 echo   .vimrc
 read -n1 -r -p "Press any key to continue or ^C to cancel...." key
 sudo apt-get -y update && sudo apt-get upgrade
-sudo apt-get -y install cmus tmux powerline vim git elinks build-essential cmake python-dev python3-dev
+sudo apt-get -y install cmus tmux powerline vim git elinks build-essential cmake python-dev python3-dev fonts-powerline
 mkdir ~/bin
 mkdir ~/.tmux
 mkdir ~/.vim
