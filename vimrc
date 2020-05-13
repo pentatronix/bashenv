@@ -1,8 +1,10 @@
-" Powerline
+" Powerline - Not used?
 " set rtp+=/usr/share/powerline/bindings/vim/
 set rtp+=/usr/lib/python2.7/dist-packages/powerline/bindings/vim
 " Always show statusline
 set laststatus=2
+" By default turn off wrapping.                                                                                                                                                 
+set nowrap 
 
 " Use 256 colors
 set t_Co=256
@@ -15,6 +17,8 @@ set t_Co=256
 
 " Set for tmux passthrough of mouse?
 set ttymouse=sgr
+" Full mouse integration
+set mouse=a
 
 " Set tab to two spaces
 " set tabstop=4                  " Set the visible width of tabs to four spaces
@@ -69,9 +73,6 @@ Plugin 'vim-airline/vim-airline-themes'
 " ./install.py --clang-completer --tern-completer
 Plugin 'Valloric/YouCompleteMe'
 
-" Powerline extras to make life awesome!
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-
 " Vim-Gitgutter
 Bundle 'airblade/vim-gitgutter'
 
@@ -79,6 +80,7 @@ Bundle 'airblade/vim-gitgutter'
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
+
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -145,4 +147,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black    ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgrey ctermbg=darkgrey
 
 autocmd FileType javascript :IndentGuidesEnable
-
+" Enable the powerline < style symbols.
+let g:airline_powerline_fonts = 1
